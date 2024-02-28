@@ -1,26 +1,27 @@
 import React from 'react';
 import {
-    SafeAreaView,
-    StyleSheet,
-    Pressable,
-    View,
-    Text,
-    ScrollView,
-    TextInput,
-    Button
-  } from 'react-native';
-
+  SafeAreaView,
+  StyleSheet,
+  Pressable,
+  View,
+  Text,
+  ScrollView,
+  TextInput,
+  Button,
+} from 'react-native';
 
 function ToDoList({tasks}) {
   return (
     <>
       <SafeAreaView>
         <ScrollView>
-            {tasks.map((task, index) =>(
-            <View style={[styles.task, styles.completed]}>
-              <Text key={index} style={styles.taskText}>{task}</Text>
+          {tasks.map((task, index) => (
+            <View key={index} style={styles.incomplete}>
+              <Text>
+                {task}
+              </Text>
             </View>
-            ))} 
+          ))}
         </ScrollView>
       </SafeAreaView>
     </>

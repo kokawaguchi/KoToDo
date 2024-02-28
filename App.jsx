@@ -15,8 +15,7 @@ function App() {
   const [tasks, setTasks] = useState([
     'Do laundry',
     'Go to gym',
-    'Walk dog',
-    'Other stuff'
+    'Walk dog'
   ]);
 
   return (

@@ -16,10 +16,8 @@ function ToDoList({tasks}) {
       <SafeAreaView>
         <ScrollView>
           {tasks.map((task, index) => (
-            <View key={index} style={styles.incomplete}>
-              <Text>
-                {task}
-              </Text>
+            <View key={index} style={styles.task}>
+              <Text>{task}</Text>
             </View>
           ))}
         </ScrollView>
